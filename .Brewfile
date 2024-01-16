@@ -1,4 +1,5 @@
 brew "fnm"
+brew "micro"
 brew "ripgrep"
 brew "asdf"
 brew "imagemagick"
