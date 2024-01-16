@@ -1,0 +1,7 @@
+brew "fnm"
+brew "ripgrep"
+brew "asdf"
+brew "imagemagick"
+brew "jq"
+brew "bat"
+brew "lazygit"
