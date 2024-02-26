@@ -1,0 +1,9 @@
+[user]
+	name = Kirill Loskutov
+	email = kl@sinker.ru
+[core]
+	autocrlf = input
+[push]
+	autoSetupRemote = true
+[include]
+	path = ~/.gitconfig.local

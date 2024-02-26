@@ -1,0 +1,31 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[container]
+disabled = true
+
+[directory]
+truncate_to_repo = false
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+style = "dimmed"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+style = "blue"
+
+[nodejs]
+symbol = 'node '
+
+[package]
+disabled = true
+
+[username]
+format = "[$user]($style)@"
+show_always = true
+
+[sudo]
+style = 'bold green'
+symbol = '🔓'
+disabled = false
