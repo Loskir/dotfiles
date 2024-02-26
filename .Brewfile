@@ -17,6 +17,7 @@ brew "stow" # config manager, kind of
 brew "imagemagick"
 brew "ffmpeg"
 
+cask "iterm2"
 cask "middleclick"
 cask "monitorcontrol"
 cask "linearmouse"
