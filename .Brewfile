@@ -12,7 +12,8 @@ brew "fzf" # fuzzy search, integrates with zoxide
 brew "eza" # modern ls replacement
 brew "lazygit" # git TUI
 brew "tree"
-brew "stow" # config manager, kind of
+brew "rename"
+brew "yadm" # config manager
 
 brew "imagemagick"
 brew "ffmpeg"
