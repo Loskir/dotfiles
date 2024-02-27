@@ -15,9 +15,6 @@ style = "dimmed"
 format = '([$all_status$ahead_behind]($style) )'
 style = "blue"
 
-[nodejs]
-symbol = 'node '
-
 [package]
 disabled = true
 
