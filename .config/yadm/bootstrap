@@ -25,4 +25,5 @@ if [ "$system_type" = "Darwin" ]; then
   
   osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/MiddleClick.app", hidden:true}'
 
+  zsh -ic 'fast-theme XDG:loskir'
 fi
