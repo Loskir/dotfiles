@@ -11,6 +11,8 @@ export EDITOR="micro"
 
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+export BAT_THEME="TwoDark"
+
 export FPATH=~/.zfunc:$FPATH
 
 # bindkey '^[[A' history-substring-search-up
