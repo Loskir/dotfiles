@@ -9,5 +9,7 @@ end
 
 fnm env --use-on-cd | source
 zoxide init fish --cmd cd | source
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 alias ls=eza
+alias cat=bat
