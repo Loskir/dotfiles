@@ -14,6 +14,7 @@ brew "lazygit" # git TUI
 brew "tree"
 brew "rename"
 brew "yadm" # config manager
+brew "git-delta" # https://github.com/dandavison/delta
 
 brew "imagemagick"
 brew "ffmpeg"

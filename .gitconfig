@@ -7,3 +7,6 @@
 	autoSetupRemote = true
 [include]
 	path = ~/.gitconfig.local
+[include]
+	path = ~/.config/delta
+

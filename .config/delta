@@ -1,0 +1,25 @@
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    hyperlinks = true
+    hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+    line-numbers = true
+
+    side-by-side = true
+    file-modified-label = changed:
+    hunk-header-style = omit
+    file-decoration-style = none
+    commit-style = omit
+    line-numbers-left-style = "#3e3e43"
+    line-numbers-right-style = "#3e3e43"
+    line-numbers-zero-style = "#57575f"
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
