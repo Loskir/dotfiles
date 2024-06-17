@@ -15,12 +15,12 @@ brew "tree"
 brew "rename"
 brew "yadm" # config manager
 brew "git-delta" # https://github.com/dandavison/delta
+brew "tlrc" # tldr.sh
 
 brew "imagemagick"
 brew "ffmpeg"
 
 cask "iterm2"
-cask "middleclick"
 cask "monitorcontrol"
 cask "linearmouse"
 cask "karabiner-elements"
