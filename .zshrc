@@ -1,10 +1,7 @@
-# CodeWhisperer pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
-
 [[ -f "$HOME/.bash_profile"  ]] && source ~/.bash_profile
 
 eval "$(starship init zsh)"
-eval "$(fnm env --use-on-cd --version-file-strategy recursive)"
+eval "$(fnm env --use-on-cd --resolve-engines --version-file-strategy recursive)"
 eval "$(zoxide init zsh --cmd cd)"
 
 export EDITOR="micro"
@@ -31,6 +28,3 @@ antidote load
 
 alias ls='eza'
 alias cat='bat'
-
-# CodeWhisperer post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"

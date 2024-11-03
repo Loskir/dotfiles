@@ -109,7 +109,7 @@ disabled = true
 
 [username]
 format = "[$user]($style)@"
-show_always = true
+# show_always = true
 
 [shell]
 disabled = false
