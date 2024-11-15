@@ -1,0 +1,57 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.5",
+  "schemes" : [
+    {
+      "buttons" : {
+        "mappings" : [
+          {
+            "shift" : false,
+            "command" : false,
+            "action" : "mouse.button.middle",
+            "option" : false,
+            "button" : 0,
+            "control" : true
+          }
+        ]
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0x342",
+          "productName" : "Apple Internal Keyboard \/ Trackpad",
+          "vendorID" : "0x5ac",
+          "category" : "trackpad"
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : false,
+        "speed" : 0.0689655172413792768,
+        "acceleration" : 1
+      }
+    },
+    {
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 1
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "distance" : {
+          "vertical" : "36px"
+        }
+      },
+      "if" : {
+        "device" : {
+          "productName" : "G502 HERO Gaming Mouse",
+          "vendorID" : "0x46d",
+          "productID" : "0xc08b",
+          "serialNumber" : "167833663133",
+          "category" : "mouse"
+        }
+      }
+    }
+  ]
+}
