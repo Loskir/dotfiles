@@ -16,7 +16,8 @@ brew "rename"
 brew "ripgrep" # recursive grep
 brew "zoxide" # smarter cd
 
+cask "jordanbaird-ice"
 cask "iterm2"
-cask "monitorcontrol"
-cask "linearmouse"
 cask "karabiner-elements"
+cask "linearmouse"
+cask "monitorcontrol"
