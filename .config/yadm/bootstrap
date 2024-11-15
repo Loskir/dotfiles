@@ -13,11 +13,14 @@ if [ "$system_type" = "Darwin" ]; then
 
   if [ -d "$HOME/.iterm2" ]; then
     echo "Setting iTerm preference folder"
+    defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder 1
     defaults write com.googlecode.iterm2 PrefsCustomFolder "$HOME/.iterm2"
   fi
 
   # zsh -ic 'fast-theme XDG:loskir'
 
-  sudo sh -c "echo /opt/homebrew/bin/fish >> /etc/shells"
-  chsh -s /opt/homebrew/bin/fish
+  if [ "$SHELL" != "/opt/homebrew/bin/fish" ]; then
+    sudo sh -c "echo /opt/homebrew/bin/fish >> /etc/shells"
+    chsh -s /opt/homebrew/bin/fish
+  fi
 fi
