@@ -16,7 +16,7 @@ if [ "$system_type" = "Darwin" ]; then
     defaults write com.googlecode.iterm2 PrefsCustomFolder "$HOME/.iterm2"
   fi
 
-  zsh -ic 'fast-theme XDG:loskir'
+  # zsh -ic 'fast-theme XDG:loskir'
 
   chsh -s /opt/homebrew/bin/fish
 fi
