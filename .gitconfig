@@ -1,12 +1,18 @@
 [user]
 	name = Kirill Loskutov
 	email = kl@sinker.ru
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPiMC1anEGPio84MMTdkrByZMZAdjdzSBcdy4T6M4eNq
 [core]
 	autocrlf = input
 [push]
 	autoSetupRemote = true
-[include]
-	path = ~/.gitconfig.local
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
 [include]
 	path = ~/.config/delta
-
+[include]
+	path = ~/.gitconfig.local
