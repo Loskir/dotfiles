@@ -1,0 +1,103 @@
+{
+  "schemes" : [
+    {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x5ac",
+          "productID" : "0x342",
+          "category" : "trackpad",
+          "productName" : "Apple Internal Keyboard \/ Trackpad"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 1,
+        "speed" : 0.0689655172413792768,
+        "disableAcceleration" : false
+      },
+      "buttons" : {
+        "mappings" : [
+          {
+            "shift" : false,
+            "command" : false,
+            "control" : true,
+            "button" : 0,
+            "action" : "mouse.button.middle",
+            "option" : false
+          }
+        ]
+      }
+    },
+    {
+      "scrolling" : {
+        "distance" : {
+          "vertical" : "36px"
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "if" : {
+        "device" : {
+          "serialNumber" : "167833663133",
+          "category" : "mouse",
+          "productName" : "G502 HERO Gaming Mouse",
+          "productID" : "0xc08b",
+          "vendorID" : "0x46d"
+        }
+      }
+    },
+    {
+      "buttons" : {
+        "mappings" : [
+          {
+            "option" : false,
+            "control" : true,
+            "action" : "mouse.button.middle",
+            "command" : false,
+            "shift" : false,
+            "button" : 0
+          }
+        ]
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x0",
+          "category" : "trackpad",
+          "productID" : "0x0",
+          "productName" : "Apple Internal Keyboard \/ Trackpad"
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "speed" : {
+          "vertical" : 10
+        },
+        "distance" : {
+          "vertical" : "auto"
+        },
+        "acceleration" : {
+          "vertical" : 2
+        },
+        "reverse" : {
+          "vertical" : true
+        }
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x3434",
+          "productName" : "Keychron Link ",
+          "category" : "mouse",
+          "productID" : "0xd030"
+        }
+      }
+    }
+  ],
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0"
+}

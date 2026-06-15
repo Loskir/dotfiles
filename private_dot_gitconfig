@@ -1,0 +1,31 @@
+[user]
+	name = Kirill Loskutov
+	email = kl@sinker.ru
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPiMC1anEGPio84MMTdkrByZMZAdjdzSBcdy4T6M4eNq
+[core]
+	autocrlf = input
+[push]
+	autoSetupRemote = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[include]
+	path = ~/.config/delta
+[include]
+	path = ~/.gitconfig.local
+[alias]
+	unstash = stash pop
+    safepop = "!f() { \
+        snap=$(git stash create -u); \
+        if git stash apply --index; then \
+            git stash drop; \
+        else \
+            git reset --hard HEAD; \
+            git clean -fd; \
+            [ -n \"$snap\" ] && git stash apply --index \"$snap\"; \
+            exit 1; \
+        fi; \
+    }; f"

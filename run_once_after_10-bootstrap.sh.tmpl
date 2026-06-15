@@ -1,0 +1,20 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+# Ported from yadm bootstrap. Runs once on a fresh machine (reruns if this file changes).
+
+if [ -f "$HOME/.Brewfile" ]; then
+  echo "Updating homebrew bundle"
+  brew bundle --global
+fi
+
+if [ -d "$HOME/.iterm2" ]; then
+  echo "Setting iTerm preference folder"
+  defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder 1
+  defaults write com.googlecode.iterm2 PrefsCustomFolder "$HOME/.iterm2"
+fi
+
+if [ "$SHELL" != "/opt/homebrew/bin/fish" ]; then
+  sudo sh -c "echo /opt/homebrew/bin/fish >> /etc/shells"
+  chsh -s /opt/homebrew/bin/fish
+fi
+{{ end -}}
