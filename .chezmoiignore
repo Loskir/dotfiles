@@ -2,4 +2,10 @@
 # macOS-only paths — skip on Linux/other
 Library
 Library/**
+.iterm2
+.iterm2/**
+.config/karabiner
+.config/karabiner/**
+.config/linearmouse
+.config/linearmouse/**
 {{ end -}}
