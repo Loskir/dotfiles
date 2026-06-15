@@ -1,5 +1,7 @@
 # Paths
-fish_add_path /opt/homebrew/bin
+if test -d /opt/homebrew/bin
+    fish_add_path /opt/homebrew/bin
+end
 
 if command -q go
     fish_add_path (go env GOPATH)/bin
